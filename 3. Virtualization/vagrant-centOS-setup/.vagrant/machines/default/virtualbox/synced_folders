@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"D:/Personal/Github/3. Virtualization/vagrant-centOS-setup","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
