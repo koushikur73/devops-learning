@@ -1,5 +1,6 @@
 # Prerequities and Setup
 
+
 Steps :
     1. Install choco on windows.<br>
     2. Install Virtual Box using Powershell as Admin <br>
@@ -24,4 +25,5 @@ Steps :
         ``` <br>
     
     Note : VS Code & Git are mandatory.
+
 
