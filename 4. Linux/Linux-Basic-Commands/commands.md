@@ -359,6 +359,207 @@ more employees.txt
 
 ---
 
+---
+
+# System Administration Commands
+
+## 20. ssh
+
+**Description:** Connects to a remote Linux machine securely.
+
+**Syntax**
+
+```bash
+ssh username@hostname
+```
+
+**Example**
+
+```bash
+ssh vagrant@192.168.56.10
+```
+
+---
+
+## 21. df
+
+**Description:** Displays disk space usage of mounted file systems.
+
+**Syntax**
+
+```bash
+df
+```
+
+**Example**
+
+```bash
+df -h
+```
+
+> `-h` displays the output in a human-readable format.
+
+---
+
+## 22. du
+
+**Description:** Displays the size of files and directories.
+
+**Syntax**
+
+```bash
+du [directory]
+```
+
+**Example**
+
+```bash
+du -sh company/
+```
+
+> `-s` shows the total size only.
+>
+> `-h` displays the size in a human-readable format.
+
+---
+
+## 23. ps
+
+**Description:** Displays information about currently running processes.
+
+**Syntax**
+
+```bash
+ps
+```
+
+**Example**
+
+```bash
+ps
+ps -ef
+ps aux
+```
+
+---
+
+## 24. top
+
+**Description:** Displays real-time information about system processes and resource usage.
+
+**Syntax**
+
+```bash
+top
+```
+
+**Useful Keys**
+
+- `q` → Quit
+- `k` → Kill a process
+- `P` → Sort by CPU usage
+- `M` → Sort by Memory usage
+
+---
+
+## 25. fuser
+
+**Description:** Shows which process is using a file, directory, or port.
+
+**Syntax**
+
+```bash
+fuser filename
+```
+
+**Example**
+
+```bash
+fuser employees.txt
+
+fuser -v employees.txt
+```
+
+---
+
+## 26. kill
+
+**Description:** Terminates a running process.
+
+**Syntax**
+
+```bash
+kill PID
+```
+
+**Example**
+
+```bash
+kill 1234
+
+kill -9 1234
+```
+
+> `-9` forcefully terminates the process.
+
+---
+
+## 27. nohup
+
+**Description:** Runs a command in the background even after the terminal is closed.
+
+**Syntax**
+
+```bash
+nohup command &
+```
+
+**Example**
+
+```bash
+nohup python app.py &
+```
+
+---
+
+## 28. free
+
+**Description:** Displays memory usage.
+
+**Syntax**
+
+```bash
+free
+```
+
+**Example**
+
+```bash
+free -h
+```
+
+---
+
+## 29. vmstat
+
+**Description:** Displays virtual memory, CPU, process, and I/O statistics.
+
+**Syntax**
+
+```bash
+vmstat
+```
+
+**Example**
+
+```bash
+vmstat 2 5
+```
+
+This command updates the statistics every 2 seconds for 5 times.
+
+---
+
 # Commands Learned
 
 - ls
@@ -380,3 +581,13 @@ more employees.txt
 - tail
 - less
 - more
+- ssh
+- df
+- du
+- ps
+- top
+- fuser
+- kill
+- nohup
+- free
+- vmstat
